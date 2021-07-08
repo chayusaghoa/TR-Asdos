@@ -2026,6 +2026,13 @@ void tampil(void)
     glEnd();
 
     //bangunan Kotak Kecil kiri
+          //Tembok kiri
+    glBegin(GL_TRIANGLES);
+    glColor3ub(133,0,0);
+    glVertex3f(-180.0, 60.0, -120.0); //kanan
+    glVertex3f(-180.0, 120.0, -80.0);//kiri
+    glVertex3f(-180.0, 120.0, -80.0);//kiri
+    glEnd();
               //lantaiatas
                   glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
@@ -2131,14 +2138,6 @@ void tampil(void)
     glVertex3f(-180.0, 0.2, -70.0);//kiri
     glVertex3f(-180.0, 0.2, -80.0);//kanan
     glEnd();
-
-    //Bangunan Kotak Kecil kanan
-             glColor3ub(255, 255, 255);
-    glVertex3f(-110.0, 120.0, -5.0); //kanan
-    glVertex3f(-180.0, 120.0, -5.0);//kiri
-    glVertex3f(-180.0, 120.0, -80.0);//kiri
-    glVertex3f(-110.0, 120.0, -80.0);//kanan
-    glEnd();
           //lantaibawah
     glBegin(GL_QUADS);
     glColor3ub(128, 236,255);
@@ -2150,10 +2149,10 @@ void tampil(void)
               //lantaibawah
     glBegin(GL_QUADS);
     glColor3ub(255, 255, 255);
-    glVertex3f(190.0, 19.8, -5.0); //kanan
-    glVertex3f(260.0, 19.8, -5.0);//kiri
-    glVertex3f(260.0, 19.8, -80.0);//kiri
-    glVertex3f(190.0, 19.8, -80.0);//kanan
+    glVertex3f(190.0, 120.0, -5.0); //kanan
+    glVertex3f(260.0, 120.0, -5.0);//kiri
+    glVertex3f(260.0, 120.0, -80.0);//kiri
+    glVertex3f(190.0, 120.0, -80.0);//kanan
     glEnd();
              //Tembok kiri
     glBegin(GL_QUADS);
